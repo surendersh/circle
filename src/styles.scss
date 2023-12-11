@@ -1,0 +1,61 @@
+
+/* ----------------------------------------------------------------------------------------------------- */
+/*  @ Main Tailwind file for injecting utilities.
+/* ----------------------------------------------------------------------------------------------------- */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+:root {
+    --theme-color: #FF6C00;
+    --bg-color: #F2F2F2;
+}
+
+.branding-color {
+    color: var(--theme-color);
+}
+
+.branding-bg-color {
+    background: var(--theme-color);
+}
+
+.card-bg-color {
+    background: var(--bg-color);
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    padding: 0 15px;
+}
+.section-padding {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.section2-card {
+    border-radius: 70px !important;
+    height: 120px;
+    width: 330px;
+
+    .mat-card-content {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.mat-list-item.h-auto {
+    height: auto !important;
+}
+

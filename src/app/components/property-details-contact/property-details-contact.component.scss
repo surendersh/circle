@@ -1,0 +1,41 @@
+.agent-card {
+    
+    background: var(--bg-color);
+    border-radius: 10px !important;
+    padding-left: 25px !important;
+    padding-right: 25px !important;
+    height: 598px;
+
+    .contaact-name {
+        color: rgba(0,0, 0, .7);
+        font-size: 18px;
+        font-weight: 500;
+    }
+    .contact-info {
+        color: rgba(0,0, 0, .7);
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 5px;
+    }
+
+    .contact-phone {
+
+    }
+}
+
+
+button {
+    border-radius: 84px !important;
+}
+
+.mat-card-title-group {
+
+    .mat-card-title {
+        font-size: 18px;
+        font-weight: 500;
+        color: rgba(0,0, 0, .7);
+    }
+   
+    border-bottom:0.5px solid rgba(0,0,0,.5);
+    
+}

@@ -1,0 +1,107 @@
+  <!-- what we provide section -->
+  <section class="py-24 card-bg-color">
+        
+    <div class="pt-8 container">
+
+      <div class="grid  grid-cols-1 md:grid-cols-3 gap-4">
+        <mat-card class="text-center agency-card" *ngFor="let agency of agencyList">
+      
+          <mat-card-content class="px-8">
+            <img [src]="agency.imgUrl" class="m-auto"/>
+            <h2 class="text-lg">{{agency.name}}</h2>
+            <p class="text-base">{{agency.details}}</p>
+          </mat-card-content>
+  
+        </mat-card>
+
+        
+      </div>
+
+      
+
+      
+        <div class="text-2xl font-medium mt-9">
+          Trending Projects
+        </div>
+        <p class="text-sm	font-normal opacity-60"> Our upcoming Properties in Hyderabad</p>
+     
+      
+      <div class="flex mt-5 flex-col md:flex-row md:space-x-4 flex-nowrap">
+      
+        <mat-card class="home-card">
+          <mat-card-content class="home-card-content">
+            <img mat-card-image
+              src="assets/anuhar.png"
+              alt="Anuhar Luxury Apartments">
+            <div>
+              <div>
+                <div class="text-lg font-bold">Anuhar Luxury Apartments</div>
+                <p class="text-xs opacity-50">Manikonda, Hyderabad</p>
+              </div>
+              <div>
+                <div class="text-lg font-bold">85.54 L - 1.26 Cr</div>
+                <p class="text-xs opacity-50">2, 2.5, 3 BHK Apartments</p>
+               
+              </div>
+              <div class="mt-2 flex mb-2">
+  
+                <img src="assets/img_info-card-logo.png"/> 
+                <div class="ml-2">
+                  <div class="text-xs font-bold">Anuhar Homes Pvt Ltd</div>
+                  <div class="flex">
+                    <div class="text-xs font-bold w-1/2">2005</div>
+                    <div class="text-xs font-bold w-1/2">22</div>
+                  </div>
+                  <div class="flex">
+                    <p class="text-xs opacity-50 w-1/2">Year estd.</p>
+                    <p class="text-xs opacity-50 w-1/2">Projects</p>
+                  </div>
+                </div>
+              </div>
+              <button mat-raised-button class="branding-bg-color text-white w-full">View Project</button>
+            </div>
+          </mat-card-content>
+      </mat-card>
+
+      <mat-card class="home-card">
+        <mat-card-content class="home-card-content">
+          <img mat-card-image
+            src="assets/apartment-2.png"
+            alt="Anuhar Luxury Apartments">
+          <div>
+            <div>
+              <div class="text-lg font-bold">Anuhar Luxury Apartments</div>
+              <p class="text-xs opacity-50">Manikonda, Hyderabad</p>
+            </div>
+            <div>
+              <div class="text-lg font-bold">85.54 L - 1.26 Cr</div>
+              <p class="text-xs opacity-50">2, 2.5, 3 BHK Apartments</p>
+             
+            </div>
+            <div class="mt-2 flex mb-2">
+
+              <img src="assets/img_info-card-logo.png"/> 
+              <div class="ml-2">
+                <div class="text-xs font-bold">Anuhar Homes Pvt Ltd</div>
+                <div class="flex">
+                  <div class="text-xs font-bold w-1/2">2005</div>
+                  <div class="text-xs font-bold w-1/2">22</div>
+                </div>
+                <div class="flex">
+                  <p class="text-xs opacity-50 w-1/2">Year estd.</p>
+                  <p class="text-xs opacity-50 w-1/2">Projects</p>
+                </div>
+              </div>
+            </div>
+            <button mat-raised-button class="branding-bg-color text-white w-full">View Project</button>
+          </div>
+        </mat-card-content>
+    </mat-card>
+
+    
+      </div>
+      
+    </div>
+
+   
+  </section>

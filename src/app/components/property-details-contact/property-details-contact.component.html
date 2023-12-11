@@ -1,0 +1,61 @@
+  <!-- property details and contact agent  card-->
+  <section class="section-padding">
+    <div class="flex flex-col md:flex-row md:space-x-4  items-end container justify-between">
+      <!-- First card -->
+      <div class="md:w-2/5 md:order-2">
+        <mat-card class="agent-card">
+
+            <mat-card-title-group>
+                <mat-card-title>User Details</mat-card-title>
+                <button mat-icon-button aria-label="close">
+                    <mat-icon>close</mat-icon>
+                </button>
+                  </mat-card-title-group>
+
+              
+       
+          <mat-card-content class="flex items-center pt-8">
+            <!-- User details with image -->
+            <div class="flex mb-2 pb-3 border-b border-gray-300">
+              <img src="assets/avatar.png" alt="User Image" class="w-30 h-20 rounded-full">
+              <div class="user-info ml-4">
+                <p class="contaact-name"> Gouroju Saikiran</p>
+                <p class="contact-info"> PM-1410-BBA-12905</p>
+                <p class="contact-info"> Posted on: Jul 15, 2023, 7:43:55 PM</p>
+              </div>
+            </div>
+            <div>
+              <!-- Display user details -->
+              
+              <!-- Form to contact the user -->
+              <form name="userForm"  (ngSubmit)="f.form.valid && onSubmit()" #f="ngForm" novalidate>
+
+                <mat-form-field class="w-full mt-3">
+                  <input matInput placeholder="Name"  name="name" [(ngModel)]="user.name" required="true" >
+                </mat-form-field>
+                <mat-form-field class="w-full ">
+                  <input matInput placeholder="Email" type="email" name="email" [(ngModel)]="user.emailAddress" required>
+                </mat-form-field>
+                <mat-form-field class="w-full">
+                  <input matInput placeholder="Phone Number" name="phonenumber" [(ngModel)]="user.phoneNumber" required>
+                </mat-form-field>
+                <button mat-raised-button class="branding-bg-color w-full text-white">Request a callback</button>
+                </form>
+
+                <div class="text-center text-xs pt-8">By submitting I accept property. Market <br/>
+                    <a class="text-blue-500 cursor-pointer">Terms & Conditions</a></div>
+            </div>
+          </mat-card-content>
+        </mat-card>
+      </div>
+     
+      
+      <!-- Second card -->
+      <div class="md:w-1/2 md:order-1">
+        <div class="text-3xl font-bold">
+          Are you ready to Sell/Rent your property? <br/> Do it in 3 Simple Steps. Join
+        </div>
+        <img src="assets/property-details.png" class="pt-4"/>
+      </div>
+    </div>
+  </section>

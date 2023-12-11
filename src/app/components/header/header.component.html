@@ -1,0 +1,18 @@
+<header class="flex items-center justify-between py-4 px-6  text-black container">
+    <div>
+      <img src="assets/logo.png" alt="Your Logo" height="30">
+    </div>
+    <div class="hidden md:flex space-x-4">
+      <button mat-button routerLink="/">Home</button>
+      <button mat-button routerLink="/about">About</button>
+      <button mat-button routerLink="/services">Contact Us</button>
+    </div>
+    <a  [matMenuTriggerFor]="menu" class="md:hidden">
+      <mat-icon>menu</mat-icon>
+    </a>
+    <mat-menu #menu="matMenu" class="md:hidden">
+      <button mat-menu-item routerLink="/">Home</button>
+      <button mat-menu-item routerLink="/about">About</button>
+      <button mat-menu-item routerLink="/services">Contact Us</button>
+    </mat-menu>
+  </header>
